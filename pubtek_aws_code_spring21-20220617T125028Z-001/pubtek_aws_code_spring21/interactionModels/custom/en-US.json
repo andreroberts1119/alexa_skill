@@ -1,0 +1,849 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "the pubtek",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "fetchServerIntent",
+          "slots": [],
+          "samples": [
+            "get the server",
+            "get our server",
+            "ready to order",
+            "come take our order",
+            "call our server",
+            "would like to place a order",
+            "we would like to place an order",
+            "speak to someone",
+            "i need to speak to someone",
+            "i need attention ",
+            "we want attentention",
+            "we need attention ",
+            "complain to the server",
+            "talk to the server",
+            "see the server",
+            "want the server",
+            "want the server to come over",
+            "i want  to see our server",
+            "we want ro see our server",
+            "we need to see our server",
+            "i want to see our server",
+            "i am ready to order",
+            "we need the server",
+            "we are ready",
+            "we are ready to place our food order",
+            "we are ready to order",
+            "to come to our table",
+            "to get assistance",
+            "to get our server ",
+            "to get the server",
+            "to take our food order",
+            "to take our order",
+            "to come see us ",
+            "for assistance",
+            "for help"
+          ]
+        },
+        {
+          "name": "greetingMessageIntent",
+          "slots": [],
+          "samples": [
+            "greet our friends",
+            "greet our customers",
+            "say hello to our friends",
+            "say hi to our friends",
+            "welcome our friends",
+            "welcome the guests",
+            "welcome our customers",
+            "say hello to our guests",
+            "tell our guests hi",
+            "tell our guests hello",
+            "welcome our guests",
+            "say hi to our guests",
+            "greet our guests"
+          ]
+        },
+        {
+          "name": "updateDeviceIntent",
+          "slots": [
+            {
+              "name": "tableNumber",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "this devices table number is {tableNumber}",
+                "this device is at table number {tableNumber}",
+                "the table number for this device is {tableNumber}",
+                "table number is {tableNumber}",
+                "the number for the table is {tableNumber}",
+                "the new table number is {tableNumber}"
+              ]
+            },
+            {
+              "name": "serverName",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "number {serverName}",
+                "{serverName}",
+                "server number {serverName}",
+                "number of server {serverName}",
+                "number of the server at this table is {serverName}",
+                "the servers name is {serverName}",
+                "the server for this table is {serverName}",
+                "new server name is {serverName}",
+                "server name {serverName}",
+                "the server name is {serverName}"
+              ],
+              "multipleValues": {
+                "enabled": false
+              }
+            }
+          ],
+          "samples": [
+            "add device to system",
+            "add device to server",
+            "add device to the system",
+            "add a device to the system",
+            "add a device to the server",
+            "add alexa device",
+            "add echo",
+            "add device",
+            "add a device ",
+            "table number {tableNumber} {serverName}",
+            "table {tableNumber} {serverName}",
+            "table number {tableNumber} and {serverName}",
+            "table number {tableNumber} server {serverName}",
+            "table {tableNumber} server {serverName}",
+            "the servers name is {serverName} at table {tableNumber} ",
+            "the new server is {serverName} at table {tableNumber}",
+            "the server name is {serverName} and is at table {tableNumber}",
+            "the server name is {serverName} and the device is at table number {tableNumber}",
+            "the table number is {tableNumber} and the server is {serverName}",
+            "the devices table number is {tableNumber} and the devices server is {serverName}",
+            "the devices table is now {tableNumber} with server {serverName}",
+            "update the device for server {serverName} and table number {tableNumber}",
+            "update device for table number {tableNumber} and server {serverName}",
+            "update the device to table {tableNumber} and server {serverName}",
+            "update the device to table number {tableNumber} and server {serverName}",
+            "update device to table number {tableNumber} and server {serverName}",
+            "update this alexa",
+            "update this echo",
+            "update this device",
+            "update system",
+            "update the system",
+            "update alexa",
+            "update the alexa",
+            "update the echo",
+            "update the device",
+            "update echo",
+            "update device"
+          ]
+        },
+        {
+          "name": "drinkOrderIntent",
+          "slots": [
+            {
+              "name": "drink",
+              "type": "drinks",
+              "samples": [
+                "ill have one {drink}",
+                "get me a {drink}",
+                "get me some {drink}",
+                "ill take a {drink}",
+                "i want a {drink}",
+                "a {drink}",
+                "{drink}"
+              ]
+            }
+          ],
+          "samples": [
+            "order drink",
+            "order more drinks",
+            "we need another drink",
+            "order more",
+            "order again",
+            "another drink",
+            "another one",
+            "get another drink",
+            "order another one",
+            "in need another pepsi",
+            "i need another sprite ",
+            "i need another coke",
+            "can i have another beer",
+            "can i have another coke",
+            "i would like a refill",
+            "refill drink ",
+            "i need a refill",
+            "can i get a refill",
+            "refill",
+            "i want a refill",
+            "can i get a refill on my {drink}",
+            "refill please",
+            "i need a refill on my drink",
+            "order {drink}",
+            "order drinks",
+            "another drink order",
+            "not done ordering drinks",
+            "we still need drinks",
+            "we have another drink order",
+            "we have another drink to order",
+            "i want to order a drink ",
+            "i would like to order a drink",
+            "i would like to order some drinks",
+            "we would like to order some drinks",
+            "we want to order drinks",
+            "we need to place a drink order",
+            "we would like to place a drink order",
+            "can we order drinks ",
+            "we want drinks",
+            "we would like to order drinks",
+            "we want to order some drinks",
+            "we are ready to order drinks",
+            "take my drink order",
+            "take our drink order",
+            "get me a {drink}",
+            "ill take a {drink}",
+            "want a {drink}",
+            "give me a {drink}",
+            "next we want a {drink}",
+            "second we want a {drink}",
+            "first we want a {drink}",
+            "{drink}"
+          ]
+        },
+        {
+          "name": "triviaIntent",
+          "slots": [],
+          "samples": [
+            "play one more time",
+            "another question",
+            "play again",
+            "i want to play trivia",
+            "i want to play a game",
+            "lets play trivia",
+            "play game",
+            "start trivia",
+            "start game",
+            "play trivia"
+          ]
+        },
+        {
+          "name": "feedbackIntent",
+          "slots": [
+            {
+              "name": "service",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{service}"
+              ]
+            },
+            {
+              "name": "food",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{food}"
+              ]
+            },
+            {
+              "name": "overall",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "{overall}"
+              ]
+            },
+            {
+              "name": "message",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "{message}"
+              ]
+            },
+            {
+              "name": "bad",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "{bad}"
+              ]
+            }
+          ],
+          "samples": [
+            "i would like to give some feedback",
+            "i want to give some feedback",
+            "review bar",
+            "review pub",
+            "give review",
+            "Give feedback"
+          ]
+        },
+        {
+          "name": "readLines",
+          "slots": [],
+          "samples": [
+            "read the lines",
+            "read your lines",
+            "read off script",
+            "read lines"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "water"
+              }
+            },
+            {
+              "name": {
+                "value": "coors light"
+              }
+            },
+            {
+              "name": {
+                "value": "corona"
+              }
+            },
+            {
+              "name": {
+                "value": "miller light"
+              }
+            },
+            {
+              "name": {
+                "value": "bud light"
+              }
+            },
+            {
+              "name": {
+                "value": "sweet tea"
+              }
+            },
+            {
+              "name": {
+                "value": "diet pepsi"
+              }
+            },
+            {
+              "name": {
+                "value": "root beer"
+              }
+            },
+            {
+              "name": {
+                "value": "sprite"
+              }
+            },
+            {
+              "name": {
+                "value": "doctor pepper"
+              }
+            },
+            {
+              "name": {
+                "value": "moutain dew"
+              }
+            },
+            {
+              "name": {
+                "value": "diet coke"
+              }
+            },
+            {
+              "name": {
+                "value": "pepsi"
+              }
+            },
+            {
+              "name": {
+                "value": "coke"
+              }
+            }
+          ],
+          "name": "drinks"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "lavaugh brown",
+                "synonyms": [
+                  "lavon brown"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "robert zander",
+                "synonyms": [
+                  "robert xander",
+                  "roberts zanders",
+                  "roberts zanders",
+                  "robert zanders",
+                  "roberts sanders",
+                  "robert sander"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "andre roberts"
+              }
+            }
+          ],
+          "name": "AMAZON.FirstName"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "d"
+              }
+            },
+            {
+              "name": {
+                "value": "c"
+              }
+            },
+            {
+              "name": {
+                "value": "b"
+              }
+            },
+            {
+              "name": {
+                "value": "a"
+              }
+            },
+            {
+              "name": {
+                "value": "d."
+              }
+            },
+            {
+              "name": {
+                "value": "c."
+              }
+            },
+            {
+              "name": {
+                "value": "b."
+              }
+            },
+            {
+              "name": {
+                "value": "a."
+              }
+            },
+            {
+              "name": {
+                "value": "A type of sushi feauturing rice topped with fish or seafood"
+              }
+            },
+            {
+              "name": {
+                "value": "Switzerland"
+              }
+            },
+            {
+              "name": {
+                "value": "Mexico"
+              }
+            },
+            {
+              "name": {
+                "value": "England"
+              }
+            },
+            {
+              "name": {
+                "value": "grapefruit"
+              }
+            },
+            {
+              "name": {
+                "value": "India pale ale"
+              }
+            },
+            {
+              "name": {
+                "value": "1935"
+              }
+            },
+            {
+              "name": {
+                "value": "Weihenstephan"
+              }
+            },
+            {
+              "name": {
+                "value": "have an annual production of 6 million barrels or less"
+              }
+            },
+            {
+              "name": {
+                "value": "March"
+              }
+            }
+          ],
+          "name": "userAnswer"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "updateDeviceIntent",
+          "confirmationRequired": true,
+          "prompts": {
+            "confirmation": "Confirm.Intent.1436543148986"
+          },
+          "slots": [
+            {
+              "name": "tableNumber",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1436543148986.1078960547309"
+              }
+            },
+            {
+              "name": "serverName",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1436543148986.1459071462334"
+              }
+            }
+          ]
+        },
+        {
+          "name": "drinkOrderIntent",
+          "confirmationRequired": true,
+          "prompts": {
+            "confirmation": "Confirm.Intent.218634493035"
+          },
+          "slots": [
+            {
+              "name": "drink",
+              "type": "drinks",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1592041771402.1317175061138"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.218634493035.1215955135091.213372682060"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "triviaIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [],
+          "delegationStrategy": "ALWAYS"
+        },
+        {
+          "name": "feedbackIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "service",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.380622682891.229068207280"
+              },
+              "validations": [
+                {
+                  "type": "isLessThanOrEqualTo",
+                  "prompt": "Slot.Validation.380622682891.229068207280.1147845290577",
+                  "value": "10"
+                }
+              ]
+            },
+            {
+              "name": "food",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.380622682891.552139410256"
+              },
+              "validations": [
+                {
+                  "type": "isLessThanOrEqualTo",
+                  "prompt": "Slot.Validation.380622682891.552139410256.1117762821652",
+                  "value": "10"
+                }
+              ]
+            },
+            {
+              "name": "overall",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.380622682891.1380816347048"
+              },
+              "validations": [
+                {
+                  "type": "isLessThanOrEqualTo",
+                  "prompt": "Slot.Validation.380622682891.1380816347048.972104874165",
+                  "value": "10"
+                }
+              ]
+            },
+            {
+              "name": "message",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1536988907489.1570710868858"
+              }
+            },
+            {
+              "name": "bad",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.184707049815.1133921797824"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.1436543148986.1459071462334",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "what is the servers number for this table"
+          },
+          {
+            "type": "PlainText",
+            "value": "What is the servers number"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Slot.1436543148986.1459071462334",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "The servers name at this table is {serverName} , is that correct"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1436543148986.1078960547309",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "what is this devices table number"
+          },
+          {
+            "type": "PlainText",
+            "value": "What is the table number for this device"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Slot.1436543148986.1078960547309",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "the table number is {tableNumber} , is that correct"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.1436543148986",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "the table number is {tableNumber}  and servers number is {serverName} , is this correct"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.1221023749714",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "you want a {drink} , is that correct"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Slot.396365062752.1254083464181",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Device name {deviceName} , is that correct"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1592041771402.1317175061138",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "what may i get you to drink?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Slot.1592041771402.1317175061138",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "you want a {drink} is that correct"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.218634493035",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "you want a {drink} is that correct"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.218634493035.1215955135091.213372682060",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "sorry this is not an option please try another drink"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1129254750341.1098614713525",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "what is the answer to the question?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.1322252165891",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What is your answer"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.380622682891.229068207280.1147845290577",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please give a number one through ten"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.380622682891.229068207280",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Thank you for giving feedback I will now ask you some questions. From one to ten, how would you rate the service you recieved"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.380622682891.552139410256",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "From one to ten how would you rate the food today"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.380622682891.552139410256.1117762821652",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please say a number between one and ten"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.380622682891.1380816347048",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "From one to ten, how would you rate the overall experience"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.380622682891.1380816347048.972104874165",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "please give a rating between one and ten"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1536988907489.1570710868858",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "I will now ask for two comments about your experience. What is one thing you enjoyed"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.184707049815.1133921797824",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Give a comment on one thing you felt could have been better"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "66"
+}
